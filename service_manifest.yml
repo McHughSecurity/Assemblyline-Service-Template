@@ -1,5 +1,5 @@
 name: TemplateService
-version: 1
+version: $SERVICE_TAG
 
 description: ALv4 Result sample service
 
@@ -52,9 +52,9 @@ heuristics:
     score: 0
 
 docker_config:
-  image: cccs/assemblyline-service-resultsample:latest
+  image: ${DOCKER_REGISTRY}:$SERVICE_TAG
   cpu_cores: 1.0
-  ram_mb: 1024
+  ram_mb: 256
 
 update_config:
   method: run
