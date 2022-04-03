@@ -52,7 +52,7 @@ heuristics:
     score: 0
 
 docker_config:
-  image: ${DOCKER_REGISTRY}:$SERVICE_TAG
+  image: adammchugh/assemblyline-service-template
   cpu_cores: 1.0
   ram_mb: 256
 
