@@ -19,6 +19,3 @@ jobs:
     - 
       name: Build the Docker image
       run: docker build . --file Dockerfile --tag assemblyline-service-template:$(date +%s)
-    -
-      name: Run the Docker Image
-      run: docker run assemblyline-service-template:$(date +%s)
